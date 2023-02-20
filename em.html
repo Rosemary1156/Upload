@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emma </title>
+    <style>
+        .vsc{
+            width: 90%;
+            height: 80vh;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input, button{
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            padding: 16px;
+            margin: 12px;
+        }
+        button{
+            width: 90px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="vsc">
+    <h1> </h1>
+    <span> What is the Volume Of a Cuboid? </span>
+    <input type="number" placeholder="Length" id="one">
+    <input type="number" placeholder="Breadth" id="two">
+    <input type="number" placeholder="height" id="three">
+    <button>Calculate</button>
+    </div>
+    <script>
+        e = document.querySelector('h1')
+        f = document.querySelector('#one')
+        g = document.querySelector('#two')
+        h = document.querySelector('three')
+        document.querySelector('span').style.color="white"
+        document.querySelector('span').style.fontSize="30px"
+        value = parseInt(one)
+        value2 = parseInt(two)
+        value3 = parseInt(three)
+        b = 'The Volume of This Cuboid is '
+        e.style.color="yellow"
+        btn = document.querySelector('button')
+        btn.addEventListener('click', ()=> {
+            emm = (1/2)
+            ros = parseInt((two).value)
+            bor = parseInt((three).value)
+            Calculate = emm * ros * bor
+            e.innerHTML= b + Calculate
+        })
+        console.log(f)
+        console.log(e)
+      </script>
+     </body>
+  </html>

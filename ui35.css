@@ -1,0 +1,262 @@
+*{
+    padding:0;
+    margin: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    display: flex ;
+    background-color: black;
+    justify-content: space-between; 
+    position: fixed;
+    color: white;
+    padding: 15px;  
+    width: 100%; 
+    z-index: 1;
+}
+body{
+    background-color: black;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    }
+ul{
+    width: 55%; 
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    cursor: default;
+}
+.ore{
+    width: 5%;
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .ore{
+        display: grid;
+        place-content: center;
+    }
+    nav{
+        justify-content: space-around;
+    }
+    ul > li{
+        display: block;
+    }
+    ul{
+        display: block;
+        position: absolute;
+        background-color: green;
+        left: 0;
+        right: 0;
+        top: 40px;
+        text-align: center;
+        clip-path: polygon( 100% 0%, 100% 0%, 100% 100%, 100% 100% );
+        transition: 0.2s all;
+        
+    }
+    .cut{
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+        transition: 0.2s all;
+    }
+}
+.home{
+    width: 86%;
+    height: 90vh;  
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    top: 9vh;
+    margin: auto;
+}
+.txt{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(165, 77, 77); */
+}
+.come{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.big{
+    font-size: 65px;
+    font-weight: 600;
+}
+.small{
+    height: 45vh;
+    width: 85%;
+    text-align: left;
+}
+.ki{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+}
+.pic{
+    width: 50%;
+    height: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.butt{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(206,14,67);
+    color: white;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ton{
+    height: 40px;
+    width: 90px;
+    margin-left: 2vw;
+    color: white;
+    background-color: black;
+    border: 0.5px solid grey;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second{
+    width: 86%;
+    height: 90vh;  
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    top: 20vh;
+    margin: auto;
+}
+button{
+    cursor: pointer;
+}
+.make{
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    position: absolute;
+    top: 20px;
+
+}
+.gi{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+.good{
+    width: 100%;
+    height: 70vh;  
+    display: flex;
+    justify-content: space-around; 
+    position: absolute;
+    bottom: 0px;
+    border-radius: 50px;
+
+}
+.girl{
+    width: 30%;
+    height: 100%;
+    border-radius: 40px;
+}
+.hun{
+    height: 55%;
+    width: 100%;
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.tx{
+    height: 45%;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.why{
+    width: 86%;
+    height: 90vh;  
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    top: 30vh;
+    margin: auto;
+}
+.join{
+    width: 45%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+.hi{
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 40px;
+}
+.sm{
+    width: 70%;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.ms{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.plus{
+    font-size: 70px;
+    color: rgb(206,14,67);
+    
+}
+.f0{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.f2{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+}
+.four{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.people{
+    width: 100%;
+    height:40%;
+    margin: 6% 0% 6% 0%;
+    border: 1px solid rgb(206,14,67);
+}
+.peep{
+    width: 45%;
+    height: 90%;
+    position: absolute;
+
+}
+.peps{
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.stra{
+    width: 20%;
+    height: 20%;
+    margin: 4%;
+}
